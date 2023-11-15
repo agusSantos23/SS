@@ -1,9 +1,44 @@
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    margin: 0;
-  }
+body{
+  
+}
 
+main{
+  display: grid;
+  grid-template-columns: 20% 4% 76% ;
+  
+}
+
+a{
+  text-decoration: none;
+}
+
+aside{
+  background-color: lightslategray;
+  height: 1170px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+aside > a{
+  margin: 20px 0;
+
+}
+
+article{
+  
+  grid-column-start: 3;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1170px;
+  margin: 5px 0;
+}
+
+#inicio{
+  text-align: center;
+  font-size: 20px;
+}
