@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Montserrat&family=Oswald:wght@300&display=swap');
 body{
-  margin: 5px 20px 5px 5px;
+  font-family: "Oswald";
+  margin: 0;
+  background-color: white;
 }
 
 main{
   display: grid;
-  grid-template-columns: 20% 2% 75% ;
+  grid-template-columns: 20% 80% ;
   
 }
 
@@ -13,35 +17,37 @@ a{
 }
 
 aside{
+
   position: fixed;
-  min-width: 400px;
-  
-  background-color: lightslategray;
-  height: 1170px;
-  font-size: 30px;
+  padding: 0 100px;
+  background-color: #FF686B;
+
+  height: 1200px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 aside > a{
   margin: 20px 0;
+  color: white;
 
 }
 
 article{
-  
-  grid-column-start: 3;
-  background-color: lightgray;
+  grid-column-start: 2;
+  background-color: #FFA69E;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1170px;
-  margin-bottom: 10px;  
+  height: 1170px; 
 }
 
 #inicio{
   text-align: center;
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
