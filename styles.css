@@ -1,10 +1,10 @@
 body{
-  
+  margin: 5px 20px 5px 5px;
 }
 
 main{
   display: grid;
-  grid-template-columns: 20% 4% 76% ;
+  grid-template-columns: 20% 2% 75% ;
   
 }
 
@@ -13,6 +13,9 @@ a{
 }
 
 aside{
+  position: fixed;
+  min-width: 400px;
+  
   background-color: lightslategray;
   height: 1170px;
   font-size: 30px;
@@ -35,7 +38,7 @@ article{
   justify-content: center;
   align-items: center;
   height: 1170px;
-  margin: 5px 0;
+  margin-bottom: 10px;  
 }
 
 #inicio{
