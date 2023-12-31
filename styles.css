@@ -35,9 +35,7 @@ nav{
     gap: 20px;
 }
 
-nav> #blur{
-    
-}
+
 
 
 nav > #enlaces{
@@ -53,13 +51,15 @@ nav > #enlaces{
 
 
 nav > #enlaces > a{
+    text-decoration: none;
+
+    display: none;
     margin: 0 10px;
     padding: 5px;
     color: #272121;
     border-right: 2px solid #E16428;
     transition: all ease 0.5s;
     opacity: 0;
-    
     overflow: hidden;
     
 }
@@ -70,9 +70,7 @@ nav > #enlaces > a:hover{
     border-bottom-right-radius: 10px;
 }
 
-a{
-    text-decoration: none;
-}
+
 
 #burguer{
     cursor: pointer;
