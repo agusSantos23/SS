@@ -3,20 +3,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Outfit:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lexend:wght@200&family=Outfit:wght@600&display=swap');
 
-body{
-    background-color: #F6E9E9;
+.background-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: white;
 }
+  
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      linear-gradient(to right, #4f4f4f2e 1px, transparent 1px),
+      linear-gradient(to bottom, #4f4f4f2e 1px, transparent 1px);
+    background-size: 14px 24px;
+    mask-image: radial-gradient(ellipse 80% 50% at 50% 0%, #000 70%, transparent 110%);
+}
+  
 
 
 nav{
     position: fixed;
-    top: 5%;
-    right: 3%;
+    top: 5.2%;
+    right: 2.4%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
+nav> #blur{
+    
+}
+
 
 nav > #enlaces{
     height: 30px;
@@ -24,37 +46,49 @@ nav > #enlaces{
     font-size: 20px;
     display: flex;
     gap: 20px;
-
+    
 }
+
+
+
 
 nav > #enlaces > a{
     margin: 0 10px;
     padding: 5px;
     color: #272121;
     border-right: 2px solid #E16428;
-
+    transition: all ease 0.5s;
+    opacity: 0;
+    
+    overflow: hidden;
+    
 }
 
 nav > #enlaces > a:hover{
     color: #E16428;
     border-bottom: 2px solid #E16428;
     border-bottom-right-radius: 10px;
-    transition: ease 0.5s ;
+}
+
+a{
+    text-decoration: none;
 }
 
 #burguer{
     cursor: pointer;
 }
 
+#burguer > path{
+    transition:  0.5s ease;
+
+}
+
 #burguer:hover path {
     stroke: #E16428; 
-    transition: 0.5s ease;
     
 }
 
-a{
-    text-decoration: none;
-}
+
 
 
 
@@ -87,20 +121,21 @@ article{
     margin: 15px 0;
 
 }
-
-#SS:hover{
+#SS{
     color: #E16428;
-    transition: 0.5s ease ;
+
 }
+
+
 
 
 #DW{
     color: #E16428;
+    transition: all 0.08s ease-out;
 }
 
 #DW:hover{
     border-bottom: 3px solid #E16428;
-    transition: 0.08s ease-out;
 }
 
 
@@ -116,12 +151,14 @@ article{
     width: 60px;
     height: 60px;
     cursor: pointer;
+    transition: 0.3s ease-out;
+
+    &:hover{
+        fill: #bc5424;
+    }
 }
 
-.iconoLink:hover{
-   fill: #E16428;
-   transition: 0.2s ease-out;
-}
+
 
 #iconGmail{
     position: relative;
@@ -131,7 +168,7 @@ article{
 #iconGmailC{
     
     position: relative;
-    right: -10%;
+    right: -8%;
     top: -32px;
     z-index: 1;
     background-color: #E16428;
