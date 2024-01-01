@@ -4,18 +4,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lexend:wght@200&family=Outfit:wght@600&display=swap');
 
 :root{
-    --uno:#F6F1E9;
+    --uno:#EEF0F6;
     --dos:#4F200D;
     --tres:#FFD93D;
     --cuatro:#FF8400;
 
 }
 
+
 body{
     background-color: var(--uno);
     color: var(--dos);
+    margin: 0;
+    font-family: "Lexend", monospace, sans-serif;
 }
 
+h1,h2,h3,h4{
+    font-family: "Outfit", monospace, sans-serif;
+
+}
 
 
 
@@ -31,6 +38,7 @@ nav{
     border-radius: 10px;
     border-right: var(--dos) 2px solid;
     border-bottom: var(--dos) 2px solid;
+    z-index: 10;
 }
 
 
@@ -91,7 +99,8 @@ main{
 }
 
 article{
-    height: 800px;
+    height: 900px;
+    margin-bottom: 100px;
 }
 
 
