@@ -51,21 +51,21 @@ function BurgerA(){
             aa.style.opacity = "1";
             aa.style.transition = "1s"
             aa.style.fontSize = "20px"
-        }, 600);
+        }, 150);
 
         setTimeout(() => {
             ab.style.opacity = "1";
             ab.style.transition = "1s";
             ab.style.fontSize = "20px"
 
-        }, 400);
+        }, 100);
 
         setTimeout(() => {
             ac.style.opacity = "1";
             ac.style.transition = "1s"
             ac.style.fontSize = "20px"
 
-        }, 200);
+        }, 50);
 
         setTimeout(() => {
             ad.style.opacity = "1";
