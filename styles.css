@@ -301,18 +301,18 @@ b{
 }
 
 #estudios{
-    height: 600px;
+    height: 700px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
 #estudios > div{
-    width: 800px;
+    width: 650px;
     padding: 15px;
     background-color: var(--cuatro);
     border: 5px solid var(--dos);
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 #estudios > div > div:first-child{
@@ -350,19 +350,49 @@ b{
 }
 
 
-
-
-
-
-
-
-
-#lenguajes > div{
+#Familiares, #Conocer{
+    text-align: center;
+    position: absolute;
     background-color: #FCECDD;
+    border: 5px solid var(--dos);
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    right: 0;
+}
+
+#Familiares{
+    top: 22.5%;
+    
+}
+
+#Conocer{
+    top: 65%;
+    
+}
+
+#Familiares > h3{
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+#Conocer > h3{
+    font-size: 30px;
+    margin: 10px 0;
 }
 
 
+#Familiares > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-
-
+#Conocer > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
