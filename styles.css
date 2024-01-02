@@ -3,13 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Outfit:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lexend:wght@300&family=Outfit:wght@600&display=swap');
 :root{
-    --uno:#F9F9C5;
-    --dos:#F37878;
-    --tres:#ffffff;
-    --cuatro:#FAD9A1;
+    --uno:#FFC288;
+    --dos:#363333;
+    --tres:#FF6701 ;
+    --cuatro:#FCECDD;
     
 }
-
+FCECDD
 
 body{
     background-color: var(--uno);
@@ -69,7 +69,7 @@ nav > #enlaces > a{
     padding: 5px;
     color: var(--dos);
     border-right: 2px solid var(--dos);
-    transition: all ease 0.2s;
+    transition: all linear 0.05s;
     opacity: 0;
     overflow: hidden;
     
@@ -77,7 +77,8 @@ nav > #enlaces > a{
 
 nav > #enlaces > a:hover{
     color: var(--tres);
-    
+    border-right: 4px solid var(--tres);
+    transform: scale(1.1);
 }
 
 
@@ -104,6 +105,7 @@ nav > #enlaces > a:hover{
 main{
     margin: auto;
     width: 1144px;
+    color: var(--dos);
 }
 
 article{
@@ -112,7 +114,9 @@ article{
     margin-bottom: 100px;
 }
 
-
+b{
+    color: var(--tres);
+}
 
 
 #Inicio > section{
@@ -146,11 +150,6 @@ article{
 }
 
 
-
-#SS{
-    color: var(--tres);
-
-}
 
 
 
@@ -187,8 +186,6 @@ article{
     }
 }
 
-
-
 #iconGmail{
     position: relative;
     z-index: 3;
@@ -201,7 +198,7 @@ article{
     top: -32px;
     z-index: 1;
     background-color: var(--dos);
-    color: var(--tres);
+    color: var(--cuatro);
     border-radius: 20px;
     width: 50px;
     font-size: 10px;
@@ -228,17 +225,74 @@ article{
 }
 
 
-#SobreMi > section:first-child{
-    position: absolute;
-    top: 20%;
+#SobreMi{
+   position: relative;
+   
 }
 
 #imgSS{
-    position: absolute;
-    top: 0;
-    right: 5px;
-    width: 200px;
+    float: right;
+    width: 300px;
+    border:10px dashed var(--tres);
 
-    border-radius: 300px;
-    shape-outside: circle(55%);
+    border-radius: 200px;
+    shape-outside: circle(50%);
 }
+
+#Soy1{
+    position: absolute;
+    top: 13%;
+}
+
+
+#Soy1 > h2{
+    font-size: 60px;
+    margin: 5px 0;
+}
+
+#Soy1 > p{
+    font-size: 24px;
+}
+
+#Soy2{
+    position: absolute;
+    top: 65%;
+    text-align: center;
+}
+
+#Soy2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+#Soy2 > div{
+    width: 500px;
+    height: 240px;
+    background-color: var(--cuatro);
+    border-bottom: var(--dos) 3px dashed;
+    border-right: var(--dos) 3px dashed;
+    border-radius: 100px;
+    padding: 20px;
+
+}
+
+#Soy2 > div > h3{
+    margin: 0px 0;
+    font-size: 30px;
+    transition: all 0.4s linear;
+}
+
+#Soy2 > div > h3:hover{
+    transform: scale(1.2);
+    color: var(--tres);
+}
+
+#Soy2 > div > p{
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+}
+
+
