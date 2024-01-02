@@ -5,17 +5,14 @@
 :root{
     --uno:#FFC288;
     --dos:#363333;
-    --tres:#FF6701 ;
+    --tres:#E16428 ;
     --cuatro:#FCECDD;
     
 }
 FCECDD
 
-body{
-    background-color: var(--uno);
-    color: var(--dos);
-    margin: 0;
-    font-family: "Lexend", monospace, sans-serif;
+body {
+    background-color: red;
 }
 
 h1,h2,h3,h4{
@@ -272,8 +269,8 @@ b{
     width: 500px;
     height: 240px;
     background-color: var(--cuatro);
-    border-bottom: var(--dos) 3px dashed;
-    border-right: var(--dos) 3px dashed;
+    border-bottom: var(--tres) 3px dashed;
+    border-right: var(--tres) 3px dashed;
     border-radius: 100px;
     padding: 20px;
 
@@ -294,5 +291,12 @@ b{
     margin: 10px 0 20px 0;
     font-size: 20px;
 }
+
+
+
+
+
+
+
 
 
