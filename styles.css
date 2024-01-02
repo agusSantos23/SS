@@ -311,7 +311,7 @@ b{
     width: 650px;
     padding: 15px;
     background-color: var(--cuatro);
-    border: 5px solid var(--dos);
+    border: 3px solid var(--dos);
     border-radius: 30px;
 }
 
@@ -354,7 +354,7 @@ b{
     text-align: center;
     position: absolute;
     background-color: #FCECDD;
-    border: 5px solid var(--dos);
+    border: 3px solid var(--dos);
     border-radius: 10px;
     padding: 10px;
     width: 300px;
@@ -396,3 +396,10 @@ b{
     flex-wrap: wrap;
 }
 
+.iconsvg{
+    transition: 0.3s linear;
+}
+
+.iconsvg:hover{
+    transform: scale(1.3);
+}
