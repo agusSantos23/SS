@@ -4,11 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lexend:wght@200&family=Outfit:wght@600&display=swap');
 
 :root{
-    --uno:#EEF0F6;
-    --dos:#4F200D;
-    --tres:#FFD93D;
-    --cuatro:#FF8400;
-
+    --uno:#F9F9C5;
+    --dos:#F37878;
+    --tres:#ffffff;
+    --cuatro:#FAD9A1;
+    
 }
 
 
@@ -109,7 +109,7 @@ article{
 #Inicio > section{
     position: relative;
     top:30%;
-    width: 800px;
+    width: 600px;
     font-size: 25px;
     font-family: "Lexend", monospace, sans-serif;
     background-color: var(--cuatro);
