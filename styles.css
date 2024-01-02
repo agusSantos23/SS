@@ -1,8 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Montserrat+Alternates&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Outfit:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lexend:wght@200&family=Outfit:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lexend:wght@300&family=Outfit:wght@600&display=swap');
 :root{
     --uno:#F9F9C5;
     --dos:#F37878;
@@ -39,6 +38,15 @@ nav{
     border-right: var(--dos) 2px solid;
     border-bottom: var(--dos) 2px solid;
     z-index: 10;
+    animation: navA 0.8s cubic-bezier(.76,.13,.44,1.56);
+    
+}
+
+@keyframes navA {
+    from{
+        right: -15%;
+    }
+
 }
 
 
@@ -99,6 +107,7 @@ main{
 }
 
 article{
+    position: relative;
     height: 900px;
     margin-bottom: 100px;
 }
@@ -115,9 +124,16 @@ article{
     background-color: var(--cuatro);
     border-bottom: var(--dos) 4px solid;
     border-right: var(--dos) 4px solid;
-
     border-radius: 50px;
     padding: 30px;
+    animation: sectionIA 0.8s cubic-bezier(.2,.5,.62,1.38);
+
+}
+
+@keyframes sectionIA {
+    from{
+        top: -500px;
+    }
 }
 
 
@@ -212,4 +228,17 @@ article{
 }
 
 
+#SobreMi > section:first-child{
+    position: absolute;
+    top: 20%;
+}
 
+#imgSS{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 200px;
+
+    border-radius: 300px;
+    shape-outside: circle(55%);
+}

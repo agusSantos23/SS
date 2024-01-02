@@ -11,11 +11,11 @@ function BurgerA(){
     
     const aa = document.getElementById("Inici");
     const ab = document.getElementById("Sobre");
-    const ac = document.getElementById("Porfolio");
-    const ad = document.getElementById("Educacion");
+    const ac = document.getElementById("Educacion");
+    const ad = document.getElementById("Porfolio");
 
     const activado = "a"
-
+    
     if(burguer.classList.contains(activado)){
 
         burguer.classList.remove(activado)
