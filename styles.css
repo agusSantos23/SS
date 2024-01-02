@@ -1,18 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Outfit:wght@600&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Montserrat+Alternates&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Outfit:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Lexend:wght@300&family=Outfit:wght@600&display=swap');
+
 :root{
-    --uno:#FFC288;
+    --uno:#ffffff;
     --dos:#363333;
     --tres:#E16428 ;
     --cuatro:#FCECDD;
-    
 }
-FCECDD
+
 
 body {
-    background-color: red;
+    background-color: var(--uno);
+    font-family:"Lexend", Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 h1,h2,h3,h4{
