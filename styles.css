@@ -17,18 +17,18 @@ body {
 
 h1,h2,h3,h4{
     font-family: "Outfit", monospace, sans-serif;
+    margin: 0;
 }
 
 
 
 nav{
     position: fixed;
-    top: 3%;
+    top: 2%;
     right: 2.4%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     background-color: var(--cuatro);
     border-radius: 10px;
     border-right: var(--dos) 2px solid;
@@ -47,7 +47,8 @@ nav{
 
 
 nav > #enlaces{
-    height: 30px;
+
+    
     font-family: "Josefin Sans", monospace, sans-serif;
     font-size: 0px;
     display: flex;
@@ -59,9 +60,7 @@ nav > #enlaces{
 
 nav > #enlaces > a{
     text-decoration: none;
-
-    margin: 0 5px;
-    padding: 5px;
+    margin: 0;
     color: var(--dos);
     border-right: 2px solid var(--dos);
     transition: all linear 0.05s;
@@ -72,7 +71,7 @@ nav > #enlaces > a{
 
 nav > #enlaces > a:hover{
     color: var(--tres);
-    border-right: 4px solid var(--tres);
+    border-right: 2px solid var(--tres);
     transform: scale(1.1);
 }
 
@@ -80,6 +79,7 @@ nav > #enlaces > a:hover{
 
 #burguer{
     cursor: pointer;
+    margin: 0 4px 0 0 ;
 }
 
 #burguer > path{
@@ -109,7 +109,7 @@ article{
 }
 
 .articulos{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 b{
@@ -120,8 +120,8 @@ b{
 #Inicio > section{
     position: relative;
     top:20%;
-    width: 600px;
-    font-size: 25px;
+    width: 800px;
+    font-size: 35px;
     font-family: "Lexend", monospace, sans-serif;
     background-color: var(--cuatro);
     border-bottom: var(--dos) 4px solid;
@@ -161,6 +161,7 @@ b{
 
 
 #link{
+    margin: 20px 0;
     width: 300px;
     
     display: flex;
@@ -168,9 +169,14 @@ b{
     
 }
 
+#link > a{
+    width: 70px;
+    height: 70px;
+}
+
 .iconoLink{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
     transition: 0.4s linear;
     fill: var(--dos);
@@ -181,6 +187,10 @@ b{
     }
 }
 
+#iconG{
+    height: 60px;
+}
+
 #iconGmail{
     position: relative;
     z-index: 3;
@@ -189,8 +199,8 @@ b{
 #iconGmailC{
     
     position: relative;
-    right: -8%;
-    top: -32px;
+    right: -15%;
+    top: -22px;
     z-index: 1;
     background-color: var(--dos);
     color: var(--cuatro);
@@ -199,7 +209,10 @@ b{
     font-size: 10px;
     text-align: center;
 }
+
+
 .iconGmailCA{
+    
     animation: iconGmailCA 3s ease ;
 }
 
@@ -229,15 +242,10 @@ b{
     float: right;
     width: 300px;
     border:10px dashed var(--tres);
-    transition: all 0.4s linear;
     border-radius: 200px;
     shape-outside: circle(50%);
 }
 
-#imgSS:hover{
-    border: 5px solid var(--tres);
-    width: 315px;
-}
 
 #Soy1{
     position: absolute;
@@ -410,6 +418,10 @@ svg{
     gap: 30px;
 }
 
+#Contacto > a {
+    width: 70px;
+    height: 70px;
+}
 /*
 
 #PortEnlaces{
