@@ -11,8 +11,8 @@ function BurgerA(){
     
     const aa = document.getElementById("Inici");
     const ab = document.getElementById("Sobre");
-    const ac = document.getElementById("Educacion");
-    const ad = document.getElementById("Porfolio");
+    const ac = document.getElementById("Edu");
+    const ad = document.getElementById("Portfo");
 
     const activado = "a"
     
@@ -49,27 +49,27 @@ function BurgerA(){
 
         setTimeout(() => {
             aa.style.opacity = "1";
-            aa.style.transition = "1s"
+            aa.style.transition = "0.5s"
             aa.style.fontSize = "20px"
         }, 150);
 
         setTimeout(() => {
             ab.style.opacity = "1";
-            ab.style.transition = "1s";
+            ab.style.transition = "0.5s";
             ab.style.fontSize = "20px"
 
         }, 100);
 
         setTimeout(() => {
             ac.style.opacity = "1";
-            ac.style.transition = "1s"
+            ac.style.transition = "0.5s"
             ac.style.fontSize = "20px"
 
         }, 50);
 
         setTimeout(() => {
             ad.style.opacity = "1";
-            ad.style.transition = "1s"
+            ad.style.transition = "0.5s"
             ad.style.fontSize = "20px"
 
         }, 0);

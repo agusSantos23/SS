@@ -17,14 +17,13 @@ body {
 
 h1,h2,h3,h4{
     font-family: "Outfit", monospace, sans-serif;
-
 }
 
 
 
 nav{
     position: fixed;
-    top: 5.2%;
+    top: 3%;
     right: 2.4%;
     display: flex;
     justify-content: center;
@@ -43,7 +42,6 @@ nav{
     from{
         right: -15%;
     }
-
 }
 
 
@@ -108,7 +106,10 @@ main{
 article{
     position: relative;
     height: 900px;
-    margin-bottom: 100px;
+}
+
+.articulos{
+    margin-top: 100px;
 }
 
 b{
@@ -145,9 +146,6 @@ b{
     margin:  0;
 
 }
-
-
-
 
 
 
@@ -231,9 +229,14 @@ b{
     float: right;
     width: 300px;
     border:10px dashed var(--tres);
-
+    transition: all 0.4s linear;
     border-radius: 200px;
     shape-outside: circle(50%);
+}
+
+#imgSS:hover{
+    border: 5px solid var(--tres);
+    width: 315px;
 }
 
 #Soy1{
@@ -293,113 +296,197 @@ b{
 }
 
 
-
-#Edu{
+#Educacion{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-}
-
-#estudios{
-    height: 700px;
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
 }
 
-#estudios > div{
-    width: 650px;
-    padding: 15px;
+
+
+.Grupo{
+    display: flex;
+    gap: 70px;
+    
+}
+
+
+
+
+.targeta{
     background-color: var(--cuatro);
-    border: 3px solid var(--dos);
+    width: 760px;
+    padding: 25px;
+    border-bottom: 5px solid var(--dos);
+    border-right: 5px solid var(--dos);
     border-radius: 30px;
+    transition: all 0.3s linear;
 }
 
-#estudios > div > div:first-child{
-    margin-bottom: 30px;
+.targeta:hover{
+    border-bottom: 5px solid var(--tres);
+    border-right: 5px solid var(--tres);
 }
 
-#estudios > div > div> h3{
-    margin: 10px 0;
+.targetaTexto > h3{
     font-size: 30px;
+    margin: 5px 0;
 }
 
-#estudios > div> div > p{
-
-    font-size: 18px;
-    margin: 0 0 18px 0;
+.targetaTexto > p{
+    font-size: 16.5px;
+    margin-bottom: 20px;
 }
 
 .info{
-    margin: 10px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
 }
 
 .info > span{
-    border: 2px solid var(--tres);
-    color: var(--tres);
-    padding: 10px;    
-    margin: 0 5px;
-    border-radius: 5px;
     font-size: 20px;
-    transition: all 0.2s linear;
-    
-}
-
-.info > span:hover{
-    background-color: var(--uno);
-}
-
-
-#Familiares, #Conocer{
-    text-align: center;
-    position: absolute;
-    background-color: #FCECDD;
-    border: 3px solid var(--dos);
-    border-radius: 10px;
-    padding: 10px;
-    width: 300px;
-    right: 0;
-}
-
-#Familiares{
-    top: 22.5%;
-    
-}
-
-#Conocer{
-    top: 65%;
-    
-}
-
-#Familiares > h3{
-    font-size: 30px;
-    margin: 10px 0;
-}
-
-#Conocer > h3{
-    font-size: 30px;
-    margin: 10px 0;
-}
-
-
-#Familiares > div{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#Conocer > div{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.iconsvg{
+    color: var(--dos);
+    border: 3px solid var(--tres);
+    border-radius: 5px;
+    padding: 5px;
     transition: 0.3s linear;
 }
 
-.iconsvg:hover{
+
+
+
+.targetaSvg{
+    text-align: center;
+    background-color: var(--cuatro);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 5px solid var(--dos);
+    border-right: 5px solid var(--dos);
+    border-radius: 30px;
+    transition: all 0.3s linear;
+
+}
+.targetaSvg:hover{
+    border-bottom: 5px solid var(--tres);
+    border-right: 5px solid var(--tres);
+}
+
+
+.targetaSvg > div{
+    height: 50%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.targetaSvg > h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+svg{
+    transition: 0.2s;
+}
+
+.targetaSvg >div > svg:hover {
+
     transform: scale(1.3);
 }
+
+#Contacto{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/*
+
+#PortEnlaces{
+    position: absolute;
+    top: 5%;
+    
+}
+
+#PortEnlaces > a{
+    font-size: 30px;
+    background-color: var(--cuatro);
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 3px dashed var(--dos);
+    
+    transition: all 0.3s linear;
+}
+
+#PortEnlaces > a:hover{
+    color: var(--tres);
+    border: 3px dashed var(--tres);
+    cursor: pointer;
+}
+
+#PortFlex{
+    position: absolute;
+    top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#PortFlex > div{
+    width: 400px;
+    background-color: var(--cuatro);
+    border-bottom: 3px solid var(--dos);
+    border-right: 3px solid var(--dos);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#PortFlex > div > img{
+    width: 100%;
+    border-radius: 15px 15px 50px 50px;
+}
+
+#PortFlex > div > div {
+    padding: 0 20px;
+}
+
+.PortTexto > h3{
+
+    color: var(--tres);
+    font-size: 25px;
+    margin: 0;
+}
+
+.PortTexto > p{
+
+    margin: 5px 0;
+}
+
+
+.PortFlexSvg{
+    margin-top: 15px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+}
+
+*/
+
+
+
+
+
