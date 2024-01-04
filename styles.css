@@ -97,9 +97,37 @@ nav > #enlaces > a:hover{
     
 }
 
+.S{
+    width: 650px;
+    height: 650px;
+    position: absolute;
+}
+
+.S>g{
+    
+    fill: #E16428;
+    
+}
 
 
 
+#Suno{
+    top: 95%;
+    left: -10%;
+    transform: rotate(10deg);
+}
+
+#Sdos{
+    top: 180%;
+    right: -5%;
+    transform: rotate(-30deg);
+}
+
+#Stres{
+    top: 238%;
+    left: -7%;
+    transform: rotate(90deg);
+}
 
 
 main{
@@ -160,10 +188,9 @@ b{
 }
 
 #imgSS{
-    filter: drop-shadow(0px 0px 20px var(--tres));
-    width: 400px;
-    border-radius: 200px;
-    
+    filter: drop-shadow(0px 0px 200px var(--tres));
+    width: 350px;
+    border-radius: 100px;
 }
 
 
@@ -289,17 +316,17 @@ b{
     width: 450px;
     height: 240px;
     background-color: var(--cuatro);
-    border-bottom: var(--tres) 3px dashed;
+    border-bottom: var(--dos) 3px dashed;
     border-radius: 100px;
     padding: 20px;
 
 }
 #Soy2 > div:first-child{
-    border-left: var(--tres) 3px dashed;
+    border-left: var(--dos) 3px dashed;
 }
 
 #Soy2 > div:last-child{
-    border-right: var(--tres) 3px dashed;
+    border-right: var(--dos) 3px dashed;
 
 }
 
@@ -322,16 +349,16 @@ b{
 
 #Educacion{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
     flex-direction: column;
-}
-
+} 
 
 
 .Grupo{
     display: flex;
-    gap: 60px;
+    gap: 40px;
     
 }
 
@@ -396,10 +423,7 @@ b{
     transition: all 0.3s linear;
 
 }
-.targetaSvg:hover{
-    border-bottom: 5px solid var(--tres);
-    border-right: 5px solid var(--tres);
-}
+
 
 
 .targetaSvg > div{
