@@ -106,6 +106,7 @@ function ActivarCA(){
 
     setTimeout(()=>{
         icon.classList.add(claseA);
+        
     }, 100)
 }
 
