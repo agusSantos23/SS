@@ -904,7 +904,7 @@
     #Educacion{
         display: flex;
         justify-content: center;
-        gap: 25px;
+        gap: 10px;
         align-items: center;
         flex-direction: column;
     } 
@@ -915,7 +915,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        gap: 10px;
+        gap: 5px;
         
     }
 
@@ -924,7 +924,7 @@
 
     .targeta{
         background-color: var(--cuatro);
-        width: 320px;
+        width: 330px;
         padding: 10px;
         border-bottom: 5px solid var(--dos);
         border-right: 5px solid var(--dos);
@@ -939,7 +939,7 @@
 
     .targetaTexto > p{
         font-size: 13px;
-        margin: 4px;
+        margin: 10px 0;
     }
 
     .info{
@@ -1005,8 +1005,7 @@
     }
 
     #Contacto{
-        position: relative;
-        bottom: 0;
+        
         display: flex;
         justify-content: center;
         gap: 30px;
